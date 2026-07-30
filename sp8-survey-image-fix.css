@@ -1,0 +1,14 @@
+/* Keep the tall SP8 product photo fully visible in external-language bundle cards. */
+.bundle .product:first-child figure {
+  height: 210px;
+  padding: 8px;
+  overflow: hidden;
+}
+
+.bundle .product:first-child figure img {
+  width: auto;
+  height: auto;
+  max-width: 78%;
+  max-height: 194px;
+  object-fit: contain;
+}
