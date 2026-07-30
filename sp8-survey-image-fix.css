@@ -1,14 +1,20 @@
-/* Keep the tall SP8 product photo fully visible in external-language bundle cards. */
-.bundle .product:first-child figure {
+/* Keep every bundle image inside a common, non-overflowing display area. */
+.bundle .product figure {
   height: 210px;
-  padding: 8px;
+  padding: 10px;
   overflow: hidden;
 }
 
-.bundle .product:first-child figure img {
+.bundle .product figure img {
   width: auto;
   height: auto;
+  max-width: 100%;
+  max-height: 190px;
+  object-fit: contain;
+}
+
+/* The tall SP8 device receives a little extra side clearance. */
+.bundle .product:first-child figure img {
   max-width: 78%;
   max-height: 194px;
-  object-fit: contain;
 }
