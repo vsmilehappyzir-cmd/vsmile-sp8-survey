@@ -18,3 +18,16 @@
   max-width: 78%;
   max-height: 194px;
 }
+
+/* Keep paired workflow aids visible without either image crowding the copy. */
+.bundle .product figure.tool-pair {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.bundle .product figure.tool-pair img {
+  max-width: calc(50% - 4px);
+  max-height: 170px;
+}
